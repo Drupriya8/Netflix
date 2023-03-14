@@ -431,21 +431,38 @@ ul {
 
 }
 
-.FAQ .box .FAQ-button {
+.FAQ .box .FAQ-span{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.FAQ .box .FAQ-span .FAQ-button {
     border: 0;
+    border-bottom: 1px solid black;
     cursor: pointer;
     font-size: 25px;
     color: white;
-    font-weight: 400;
-    margin-bottom: 10px;
+    font-weight: 400;    
     padding: 20px 0 20px 30px;
     text-align: left;
     position: relative;
     width: 100%;
     background-color: #303030;
 }
+.FAQ .box .FAQ-span .FAQ-button-drop-down-content {
+    
+   padding: 0 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;      
+    text-align: left;    
+    width: 100%;
+    background-color: #303030;
+}
 
-.FAQ .box .FAQ-button .FAQ-icon {
+
+
+.FAQ .box .FAQ-span .FAQ-button .FAQ-icon {
     color: white;
     position: absolute;
     right: 30px;
@@ -662,7 +679,7 @@ footer .footer-content p:nth-child(4) {
         max-height: 54%;
         max-width: 73%;
         position: absolute;
-        top: 34%;
+        top: 24%;
         transform: translate(-50%, -50%);
         width: 100%;
 
@@ -807,7 +824,7 @@ footer .footer-content p:nth-child(4) {
         max-height: 45%;
         max-width: 62%;
         position: absolute;
-        top: 30%;
+        top: 20%;
         transform: translate(-50%, -50%);
         width: 100%;
 
@@ -872,31 +889,42 @@ footer .footer-content p:nth-child(4) {
 
 
     .FAQ .box {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
 
-    .FAQ .box .FAQ-button {
+    .FAQ .box .FAQ-span .FAQ-button {
         border: 0;
+        border-bottom: 1px solid black;
         cursor: pointer;
         font-size: 16px;
         color: white;
-        font-weight: 400;
-        margin-bottom: 10px;
-        padding: 20px 0 20px 10px;
+        font-weight: 400;        
+        padding: 20px 0 20px 20px;
         text-align: left;
         position: relative;
         width: 100%;
         background-color: #303030;
     }
 
-    .FAQ .box .FAQ-button .FAQ-icon {
+    .FAQ .box .FAQ-span .FAQ-button-drop-down-content {
+    
+        padding: 0 20px;
+         font-size: 16px;
+         color: white;
+         font-weight: 400;      
+         text-align: left;    
+         width: 100%;
+         background-color: #303030;
+     }
+
+    .FAQ .box .FAQ-span .FAQ-button .FAQ-icon {
         color: white;
         position: absolute;
-        right: 10px;
+        right: 20px;
         top: 50%;
         transform: translateY(-50%);
 
